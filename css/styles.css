@@ -90,11 +90,12 @@ a {
   align-items: center;
   text-align: center;
   margin: 0;
+  margin-left: 93px;
 }
 
 .item {
   padding: 32px 0;
-  margin-right: 30px;
+  margin-right: 50px;
   position: relative;
 }
 
@@ -219,7 +220,6 @@ a {
   line-height: 1.9;
   cursor: pointer;
   border-radius: 4px;
-  padding: 10px 32px;
 }
 
 /*Modal windows*/
@@ -326,6 +326,7 @@ a {
   font-weight: 700;
   line-height: 1.14;
   margin-top: 30px;
+  size: 14px;
   text-transform: uppercase;
 }
 
@@ -372,9 +373,10 @@ a {
 
 /*Наша команда*/
 
-.container .section-team {
+.team {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: #F5F4FA;
 }
 
 .container-team-title {
@@ -426,6 +428,7 @@ a {
   padding: 0;
   margin-top: 16px;
   margin-left: 32px;
+
 }
 
 .team-item {
@@ -437,6 +440,7 @@ a {
   color: var(--paragraf-text-color);
   border-radius: 50%;
   background-color: var(--main-back-color);
+  transition: color 250ms  var(--timing-function)
 }
 
 .team-item:hover {
@@ -495,6 +499,7 @@ a {
 }
 
 .brand {
+ list-style: none;
   width: 1200px;
   height: 90px;
   display: flex;
@@ -518,20 +523,24 @@ a {
   padding: 0;
   flex-basis: calc(100% / 6 - var(--nav-list-gap));
   cursor: pointer;
+  transition: color 250ms  var(--timing-function), border 250ms  var(--timing-function);
 }
 
 .icon {
-  fill: var(--paragraf-text-color);
+  fill: currentColor;
   width: 45px;
   height: 50px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.icon:hover,
-.icon:focus {
-  fill: var(--accent-color);
+.client-logo:hover,
+.client-logo:focus {
+ color: var(--accent-color);
+ border: 1px solid var(--accent-color);
 }
+
+
 
 .brand,
 .client-logo {
@@ -591,7 +600,6 @@ a {
 }
 
 .enjoyus {
-  font-style: normal;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
